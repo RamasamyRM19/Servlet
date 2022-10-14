@@ -106,7 +106,7 @@ public class EmployeeService {
      *        String dateOfJoining, Long salary
      * @return String
      */
-    public void updateTrainerById(Integer id, String firstName, String lastName, String designation, 
+    public List<Trainer> updateTrainerById(Integer id, String firstName, String lastName, String designation, 
             String department, String phoneNumber, String emailId, 
             String dateOfBirth, String previousExperience, 
             String dateOfJoining, String salary) {
@@ -143,9 +143,10 @@ public class EmployeeService {
                 if (!salary.isEmpty()) {
                     trainer.setSalary(Long.parseLong(salary));
                 }   
-                employeeDAO.updateTrainerById(trainer);
+                trainers = employeeDAO.updateTrainerById(trainer);
             }
         }
+		return trainers;
     }
 
     /**
