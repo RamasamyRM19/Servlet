@@ -3,23 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <title>Employee Management</title>
+<style>
+button {
+padding: 14px 10%;
+border-radius: 12px;
+background-color: #008CBA;
+color: white; 
+font-size : 20px;
+ }
+ button:hover {
+  background-color: #4CAF50;
+}
+</style>
 </head>
 <body>
-	<div class="intro">
-		<h2>Employee Management System</h2>
+	<div class="intro" align="center">
+		<h1>Employee Management System</h1>
 		<div id="trainer">
-			<h3>Trainer</h3>
-			<button><a href="CreateTrainer.jsp">Create</a></button>
-			<button><a href="add?flag=viewTrainer">View</button>
-			<!-- <button><a href="add?flag=updateTrainer">Update</button>
-			<button>Delete</button> -->
+			<h2>Trainer</h2>
+			<a href="CreateTrainer.jsp"><button>Create</button></a>
+			<a href="add?flag=viewTrainer"><button>View</button></a>
 		</div>
 		<div id="trainee">
-			<h3>Trainee</h3>
-			<button><a href="CreateTrainee.jsp">Create</a></button>
-			<button><a href="add?flag=viewTrainee">View</button>
-			<!-- <button>Update</button>
-			<button>Delete</button> -->
+			<h2>Trainee</h2>
+			<a href="CreateTrainee.jsp"><button>Create</button></a>
+			<a href="add?flag=viewTrainee"><button>View</button></a>
 		</div>
 	</div>
 </body>

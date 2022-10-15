@@ -46,11 +46,11 @@
 				<td><%=trainer.getDateOfJoining()%></td>
 				<td><%=trainer.getSalary()%></td>
 				<td><a
-					href="add?action=updateTrainer&id=<%=trainer.getId()%>">
+					href="add?flag=updateTrainer&id=<%=trainer.getId()%>">
 						<input class="update" type="button" value="Update">
 				</a></td>
 				<td><a
-					href="add?action=deleteTrainer&id=<%=trainer.getId()%>">
+					href="add?flag=deleteTrainer&id=<%=trainer.getId()%>">
 						<input class="delete" type="button" value="Delete">
 				</a></td>
 			</tr>

@@ -77,7 +77,7 @@ public class Skills {
      }
 
     public String toString() {
-        return ("\nList Of Skills : " + skillName + "\nVersion : " + skillVersion +
+        return ("\nSkillId : " + skillId + "List Of Skills : " + skillName + "\nVersion : " + skillVersion +
                 "\nLast Used Year : " + lastUsedYear + "\nSkill Experience : " + skillExperience);
     }
 }

@@ -11,6 +11,7 @@
 		<h1>Employee Register Form</h1>
 		<form action="add" method="post">
 			<input type="hidden" name="flag" value="insertTrainee">
+			<input type="hidden" name="action" value="insertTrainee">
 			<table style="with: 80%">
 				<tr>
 					<td>First Name</td>
@@ -55,7 +56,7 @@
 				</tr>
 				<tr>
 				<tr>
-					<th>SKill Name</th>
+					<th>Skill Name</th>
 					<th>Version</th>
 					<th>Last Used Year</th>
 					<th>Experience</th>

@@ -90,8 +90,7 @@ public class EmployeeService {
      * @return List<Trainer> trainers
      */
     public Trainer getTrainerById(Integer id) { 
-        Trainer trainer = new Trainer();
-        trainer = employeeDAO.retrieveTrainerById(id); 
+        Trainer trainer = employeeDAO.retrieveTrainerById(id); 
         return trainer;
     }
 
@@ -106,7 +105,7 @@ public class EmployeeService {
      *        String dateOfJoining, Long salary
      * @return String
      */
-    public List<Trainer> updateTrainerById(Integer id, String firstName, String lastName, String designation, 
+    public void updateTrainerById(Integer id, String firstName, String lastName, String designation, 
             String department, String phoneNumber, String emailId, 
             String dateOfBirth, String previousExperience, 
             String dateOfJoining, String salary) {
@@ -143,10 +142,10 @@ public class EmployeeService {
                 if (!salary.isEmpty()) {
                     trainer.setSalary(Long.parseLong(salary));
                 }   
-                trainers = employeeDAO.updateTrainerById(trainer);
+                employeeDAO.updateTrainerById(trainer);
             }
         }
-		return trainers;
+		//return trainers;
     }
 
     /**
@@ -245,7 +244,7 @@ public class EmployeeService {
     public void updateTraineeById(Integer id, String firstName, String lastName, String designation, 
             String department, String phoneNumber, String emailId, 
             String dateOfBirth, String previousExperience, 
-            String dateOfJoining, String passedOutYear) {
+            String dateOfJoining, String passedOutYear, Set<Skills> skills) {
         List<Trainee> trainees = employeeDAO.retrieveAllTrainees();
         for (Trainee trainee : trainees) {
             if ((trainee.getId()).equals(id)) {
@@ -279,6 +278,10 @@ public class EmployeeService {
                 if (!passedOutYear.isEmpty()) {
                     trainee.setPassedOutYear(Integer.parseInt(passedOutYear));
                 }
+                if (!skills.isEmpty()) {
+                    trainee.setSkills(skills);
+                }
+                System.out.println(skills);
                 employeeDAO.updateTraineeById(trainee);
             }
         }

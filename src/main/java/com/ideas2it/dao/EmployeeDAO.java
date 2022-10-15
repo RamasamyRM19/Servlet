@@ -70,13 +70,13 @@ public class EmployeeDAO {
 	 */
 	public Trainer retrieveTrainerById(Integer id) {
 		Trainer trainer = new Trainer();
-		try {
-			session = sessionFactory.openSession();
-			trainer = (Trainer) session.get(Trainer.class, id);
-		} finally {
-			session.close(); 
-		}
-		return trainer;
+        try {
+            session = sessionFactory.openSession();
+            trainer = (Trainer) session.get(Trainer.class, id);
+        } finally {
+            session.close(); 
+        }
+        return trainer;
 	}
 
 	/**
@@ -85,7 +85,7 @@ public class EmployeeDAO {
 	 * @param Trainer trainer
 	 * @return void
 	 */
-	public List<Trainer> updateTrainerById(Trainer trainer) {
+	public void updateTrainerById(Trainer trainer) {
 		try {
 			session = sessionFactory.openSession();
 			Transaction transaction = session.beginTransaction();
@@ -96,7 +96,6 @@ public class EmployeeDAO {
 		} finally {
 			session.close();
 		}
-		return null;
 	}
 
 	/**
@@ -182,7 +181,8 @@ public class EmployeeDAO {
 			session = sessionFactory.openSession();
 			Transaction transaction = session.beginTransaction();
 			if (!trainee.isEmpty()) {
-				session.merge(trainee);
+				session.saveOrUpdate(trainee);
+				System.out.println(trainee);
 			}
 			transaction.commit();
 		} finally {

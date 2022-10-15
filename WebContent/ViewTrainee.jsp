@@ -15,7 +15,7 @@
 	<div align="center">
 		<input type="hidden" name="flag" value="viewTrainee">
 		<table border="1">
-			<!-- <h2>List of Trainers</h2> -->
+			<h2>List of Trainees</h2>
 			<tr>
 				<th>Id</th>
 				<th>FirstName</th>
@@ -58,11 +58,11 @@
 				<td><%=skill.getSkillExperience()%></td>
 				<% } %>
 				<td><a
-					href="add?action=updateTrainee&id=<%=trainee.getId()%>">
+					href="add?flag=updateTrainee&id=<%=trainee.getId()%>">
 						<input class="update" type="button" value="Update">
 				</a></td>
 				<td><a
-					href="add?action=deleteTrainee&id=<%=trainee.getId()%>">
+					href="add?flag=deleteTrainee&id=<%=trainee.getId()%>">
 						<input class="delete" type="button" value="Delete">
 				</a></td>
 			</tr>

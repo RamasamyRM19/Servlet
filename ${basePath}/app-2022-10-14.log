@@ -1,0 +1,712 @@
+14-10-2022 17:04:58.002 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 17:04:58.497 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 17:04:59.322 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 17:04:59.324 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 17:04:59.325 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 17:04:59.326 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 17:04:59.330 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 17:04:59.790 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 17:05:00.528 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3b5fbb57] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 17:05:00.799 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 17:20:53.454 WARN [http-nio-8082-exec-13] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 17:20:53.454 INFO [http-nio-8082-exec-13] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 17:20:53.455 INFO [http-nio-8082-exec-13] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 17:20:53.455 INFO [http-nio-8082-exec-13] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 17:20:53.455 INFO [http-nio-8082-exec-13] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 17:20:53.487 INFO [http-nio-8082-exec-13] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 17:20:53.625 INFO [http-nio-8082-exec-13] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57bfcad6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 17:20:53.771 INFO [http-nio-8082-exec-13] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 17:23:31.369 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 17:23:31.805 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 17:23:32.477 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 17:23:32.478 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 17:23:32.478 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 17:23:32.479 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 17:23:32.482 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 17:23:32.885 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 17:23:33.576 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@71fb4729] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 17:23:33.814 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 17:42:11.207 INFO [http-nio-8082-exec-2] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 17:42:12.161 INFO [http-nio-8082-exec-2] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 17:42:13.523 WARN [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 17:42:13.524 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 17:42:13.525 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 17:42:13.526 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 17:42:13.533 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 17:42:14.438 INFO [http-nio-8082-exec-2] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 17:42:16.006 INFO [http-nio-8082-exec-2] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@71fb4729] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 17:42:16.363 INFO [http-nio-8082-exec-2] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 17:46:58.762 INFO [http-nio-8082-exec-4] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 17:46:59.760 INFO [http-nio-8082-exec-4] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 17:47:01.157 WARN [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 17:47:01.158 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 17:47:01.158 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 17:47:01.159 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 17:47:01.165 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 17:47:02.108 INFO [http-nio-8082-exec-4] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 17:47:03.550 INFO [http-nio-8082-exec-4] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@61ac232e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 17:47:03.827 INFO [http-nio-8082-exec-4] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 18:05:02.498 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 18:05:02.953 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 18:05:03.578 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 18:05:03.579 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 18:05:03.580 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 18:05:03.580 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 18:05:03.583 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 18:05:04.028 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 18:05:04.736 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@30da6b85] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 18:05:04.962 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 18:10:59.370 INFO [http-nio-8082-exec-4] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 18:10:59.842 INFO [http-nio-8082-exec-4] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 18:11:00.482 WARN [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 18:11:00.483 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 18:11:00.484 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 18:11:00.484 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 18:11:00.486 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 18:11:00.896 INFO [http-nio-8082-exec-4] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 18:11:01.576 INFO [http-nio-8082-exec-4] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2c8b8fa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 18:11:01.769 INFO [http-nio-8082-exec-4] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 18:13:15.504 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 18:13:15.944 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 18:13:16.550 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 18:13:16.551 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 18:13:16.551 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 18:13:16.551 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 18:13:16.554 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 18:13:17.005 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 18:13:17.643 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@30da6b85] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 18:13:17.806 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 18:14:07.290 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 18:14:07.723 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 18:14:08.352 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 18:14:08.353 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 18:14:08.353 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 18:14:08.353 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 18:14:08.356 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 18:14:08.833 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 18:14:09.456 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@77f9b19e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 18:14:09.638 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 18:15:42.742 INFO [http-nio-8082-exec-4] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 18:15:43.200 INFO [http-nio-8082-exec-4] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 18:15:43.840 WARN [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 18:15:43.840 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 18:15:43.841 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 18:15:43.841 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 18:15:43.844 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 18:15:44.314 INFO [http-nio-8082-exec-4] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 18:15:44.944 INFO [http-nio-8082-exec-4] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2c8b8fa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 18:15:45.129 INFO [http-nio-8082-exec-4] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 18:20:13.363 INFO [http-nio-8082-exec-4] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 18:20:13.752 INFO [http-nio-8082-exec-4] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 18:20:14.355 WARN [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 18:20:14.356 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 18:20:14.357 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 18:20:14.357 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 18:20:14.360 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 18:20:14.870 INFO [http-nio-8082-exec-4] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 18:20:15.526 INFO [http-nio-8082-exec-4] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2c8b8fa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 18:20:15.731 INFO [http-nio-8082-exec-4] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 18:24:28.651 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 18:24:29.688 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 18:24:31.032 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 18:24:31.033 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 18:24:31.034 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 18:24:31.035 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 18:24:31.041 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 18:24:31.977 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 18:24:33.432 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@30da6b85] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 18:24:33.754 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 18:39:09.360 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 18:39:10.388 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 18:39:11.721 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 18:39:11.722 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 18:39:11.723 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 18:39:11.723 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 18:39:11.731 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 18:39:12.648 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 18:39:14.253 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f42f710] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 18:39:14.556 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 19:09:32.532 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 19:09:33.504 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 19:09:34.863 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 19:09:34.864 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 19:09:34.864 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 19:09:34.865 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 19:09:34.869 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 19:09:35.862 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 19:09:37.360 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f42f710] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 19:09:37.671 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 21:57:12.633 INFO [http-nio-8082-exec-4] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 21:57:13.789 INFO [http-nio-8082-exec-4] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 21:57:15.119 WARN [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 21:57:15.119 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 21:57:15.120 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 21:57:15.121 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 21:57:15.130 INFO [http-nio-8082-exec-4] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 21:57:15.982 INFO [http-nio-8082-exec-4] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 21:57:17.636 INFO [http-nio-8082-exec-4] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@331f5978] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 21:57:18.036 INFO [http-nio-8082-exec-4] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 22:36:25.305 WARN [http-nio-8082-exec-19] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 22:36:25.307 INFO [http-nio-8082-exec-19] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 22:36:25.307 INFO [http-nio-8082-exec-19] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 22:36:25.307 INFO [http-nio-8082-exec-19] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 22:36:25.308 INFO [http-nio-8082-exec-19] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 22:36:25.362 INFO [http-nio-8082-exec-19] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 22:36:25.627 INFO [http-nio-8082-exec-19] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@17eb6885] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 22:36:25.796 INFO [http-nio-8082-exec-19] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 22:36:25.868 INFO [http-nio-8082-exec-19] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:38:49.925 WARN [http-nio-8082-exec-26] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 22:38:49.926 INFO [http-nio-8082-exec-26] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 22:38:49.927 INFO [http-nio-8082-exec-26] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 22:38:49.927 INFO [http-nio-8082-exec-26] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 22:38:49.927 INFO [http-nio-8082-exec-26] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 22:38:49.954 INFO [http-nio-8082-exec-26] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 22:38:50.062 INFO [http-nio-8082-exec-26] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@24eeb877] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 22:38:50.228 INFO [http-nio-8082-exec-26] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 22:38:50.245 INFO [http-nio-8082-exec-26] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:39:57.993 INFO [http-nio-8082-exec-6] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 22:39:58.984 INFO [http-nio-8082-exec-6] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 22:40:00.443 WARN [http-nio-8082-exec-6] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 22:40:00.444 INFO [http-nio-8082-exec-6] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 22:40:00.445 INFO [http-nio-8082-exec-6] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 22:40:00.446 INFO [http-nio-8082-exec-6] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 22:40:00.454 INFO [http-nio-8082-exec-6] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 22:40:01.399 INFO [http-nio-8082-exec-6] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 22:40:03.032 INFO [http-nio-8082-exec-6] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@49334aff] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 22:40:03.388 INFO [http-nio-8082-exec-6] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 22:40:03.689 INFO [http-nio-8082-exec-6] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:41:41.026 INFO [http-nio-8082-exec-2] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 22:41:41.477 INFO [http-nio-8082-exec-2] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 22:41:42.142 WARN [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 22:41:42.143 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 22:41:42.144 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 22:41:42.144 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 22:41:42.147 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 22:41:42.590 INFO [http-nio-8082-exec-2] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 22:41:43.311 INFO [http-nio-8082-exec-2] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@67d90700] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 22:41:43.542 INFO [http-nio-8082-exec-2] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 22:41:43.724 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:23.617 INFO [http-nio-8082-exec-2] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 22:42:24.566 INFO [http-nio-8082-exec-2] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 22:42:26.027 WARN [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 22:42:26.028 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 22:42:26.028 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 22:42:26.029 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 22:42:26.033 INFO [http-nio-8082-exec-2] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 22:42:26.965 INFO [http-nio-8082-exec-2] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 22:42:28.485 INFO [http-nio-8082-exec-2] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@67d90700] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 22:42:28.843 INFO [http-nio-8082-exec-2] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 22:42:29.158 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.193 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.211 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.223 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.233 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.243 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.261 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.281 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.297 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.313 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.328 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.354 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.379 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.403 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.418 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.429 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.445 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.457 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.469 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.486 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.498 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.518 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.539 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.552 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.564 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.581 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.592 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.601 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.612 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.620 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.633 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.645 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.655 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.663 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.678 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.692 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.705 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.716 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.731 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.745 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.758 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.769 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.782 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.792 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.801 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.810 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.817 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.830 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.838 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.849 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.857 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.866 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.875 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.885 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.895 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.903 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.911 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.918 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.926 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.934 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.943 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.951 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.961 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.978 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.986 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:29.996 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.005 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.014 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.024 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.035 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.048 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.057 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.067 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.077 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.084 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.092 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.098 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.111 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.121 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.132 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.143 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.153 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.163 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.170 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.181 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.188 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.196 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.204 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.214 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.224 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.233 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.240 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.248 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.255 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.261 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.268 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.275 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.281 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.288 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.301 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.314 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.324 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.333 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.343 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.352 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.361 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.368 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.376 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.383 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.392 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.399 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.410 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.417 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.424 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.430 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.436 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.442 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.450 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.461 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.469 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.479 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.487 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.495 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.502 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.511 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.520 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.531 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.541 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.547 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.553 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.560 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.567 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.574 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.582 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.590 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.597 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.604 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.613 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.619 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.628 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.637 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.648 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.657 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.664 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.671 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.678 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.687 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.697 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.704 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.712 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.719 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.725 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.733 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.744 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.752 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.760 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.767 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.777 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.783 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.791 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.798 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.806 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.813 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.819 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.830 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.837 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.844 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.850 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.857 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.863 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.870 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.877 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.883 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.895 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.904 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.917 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.927 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.935 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.943 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.951 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.959 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.966 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.974 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.981 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.987 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:30.993 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.000 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.011 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.026 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.050 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.061 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.071 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.081 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.091 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.099 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.109 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.118 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.126 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.134 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.142 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.147 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.158 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.167 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.175 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.182 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.190 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.198 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.204 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.213 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.220 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.229 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.236 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.243 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.249 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.258 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.265 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.272 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.282 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.291 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.298 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.303 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.311 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.317 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.325 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.331 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.337 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.344 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.350 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.357 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.363 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.369 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.376 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.384 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.392 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.401 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.411 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.420 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.431 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.441 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.457 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.465 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.474 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.484 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.494 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.504 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.524 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.533 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.544 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.551 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.561 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.567 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.575 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.587 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.597 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.606 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.614 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.619 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.627 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.633 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.638 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.646 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.652 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.660 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.666 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.673 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.680 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.688 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.700 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.707 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.714 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.720 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.730 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.738 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.745 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.751 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.760 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.777 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.787 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.798 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.810 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.817 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.832 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.839 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.847 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.854 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.861 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.866 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.873 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.880 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.887 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.895 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.902 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.909 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.916 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.925 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.932 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.945 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.952 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.964 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.975 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.982 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.991 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:31.999 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.008 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.015 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.020 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.041 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.053 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.060 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.067 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.075 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.083 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.091 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.097 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.109 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.124 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.132 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.140 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.146 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.152 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.161 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.166 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.171 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.178 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.182 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.187 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.193 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.199 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.204 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.211 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.216 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.221 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.228 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.234 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.241 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.248 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.254 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.260 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.265 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.270 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.275 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.280 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.286 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.293 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.298 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.304 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.311 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.317 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.323 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.329 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.337 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.348 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.358 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.368 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.381 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.388 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.395 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.403 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.411 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.419 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.428 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.439 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.447 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.456 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.463 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.470 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.478 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.485 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.493 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.501 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.511 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.524 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.531 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.539 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.546 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.553 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.562 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.570 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.579 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.587 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.595 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.603 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.614 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.627 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.636 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.647 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.655 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.663 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.669 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.676 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.683 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.692 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.698 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.704 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.713 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.722 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.729 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.735 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.746 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.752 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.759 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.766 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.775 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.781 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.787 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.796 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.804 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.813 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.820 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.827 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.834 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.842 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.850 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.859 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.866 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.875 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.881 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.887 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.894 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.902 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.909 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.917 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.926 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.933 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.941 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.949 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.957 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.964 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.973 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.980 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.988 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:32.995 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.001 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.008 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.013 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.019 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.025 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.030 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.036 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.043 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.049 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.055 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.062 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.068 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.078 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.087 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.094 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.101 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.109 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.115 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.122 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.129 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.134 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.141 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.147 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.153 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.161 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.167 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.175 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.181 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.187 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:42:33.196 INFO [http-nio-8082-exec-2] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:44:18.367 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 22:44:19.312 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 22:44:20.678 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 22:44:20.679 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 22:44:20.680 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 22:44:20.681 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 22:44:20.687 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 22:44:21.651 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 22:44:23.183 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@67d90700] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 22:44:23.478 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 22:44:23.785 INFO [http-nio-8082-exec-3] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 22:45:07.653 INFO [http-nio-8082-exec-5] [com.ideas2it.FirstServlet.insertTrainer(FirstServlet.java:84)] - Trainer Inserted successfully!
+14-10-2022 23:17:51.397 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 23:17:52.397 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 23:17:53.859 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 23:17:53.860 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 23:17:53.861 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 23:17:53.862 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 23:17:53.867 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 23:17:54.862 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 23:17:56.229 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@62a60f65] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 23:17:56.541 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 23:18:41.306 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 23:18:42.410 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 23:18:43.788 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 23:18:43.789 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 23:18:43.790 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 23:18:43.791 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 23:18:43.796 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 23:18:44.732 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 23:18:46.308 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@62a60f65] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 23:18:46.639 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 23:19:53.156 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 23:19:54.188 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 23:19:55.608 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 23:19:55.609 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 23:19:55.610 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 23:19:55.611 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 23:19:55.619 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 23:19:56.588 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 23:19:58.166 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@62a60f65] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 23:19:58.470 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-10-2022 23:26:39.720 INFO [http-nio-8082-exec-3] [org.hibernate.Version.logVersion(Version.java:44)] - HHH000412: Hibernate ORM core version 5.6.11.Final
+14-10-2022 23:26:40.369 INFO [http-nio-8082-exec-3] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56)] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-10-2022 23:26:41.612 WARN [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)] - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14-10-2022 23:26:41.613 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:119)] - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/employee_db]
+14-10-2022 23:26:41.614 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:128)] - HHH10001001: Connection properties: {password=****, user=root}
+14-10-2022 23:26:41.615 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:132)] - HHH10001003: Autocommit mode: false
+14-10-2022 23:26:41.622 INFO [http-nio-8082-exec-3] [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:322)] - HHH000115: Hibernate connection pool size: 20 (min=1)
+14-10-2022 23:26:42.521 INFO [http-nio-8082-exec-3] [org.hibernate.dialect.Dialect.<init>(Dialect.java:175)] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14-10-2022 23:26:43.840 INFO [http-nio-8082-exec-3] [org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:48)] - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f42f710] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+14-10-2022 23:26:44.156 INFO [http-nio-8082-exec-3] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52)] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]

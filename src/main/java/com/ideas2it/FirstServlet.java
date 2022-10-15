@@ -47,7 +47,7 @@ public class FirstServlet extends HttpServlet{
 			viewTrainer(request, response); 
 			break; 
 		case "updateTrainer": 
-			updateTrainerById(request, response); 
+			viewTrainerById(request, response); 
 			break; 
 		case "deleteTrainer": 
 			deleteTrainerById(request, response); 
@@ -58,10 +58,18 @@ public class FirstServlet extends HttpServlet{
 		case "viewTrainee": 
 			viewTrainee(request, response); 
 			break;
+		case "updateTrainee": 
+			viewTraineeById(request, response); 
+			break; 
+		case "deleteTrainee": 
+			deleteTraineeById(request, response); 
+			break;
 		}
 	}
 
 	public void insertTrainer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html"); 
+		PrintWriter out = response.getWriter();
 		HttpSession session = request.getSession();   
 		Integer employeeId = 0;
 		String firstName = request.getParameter("firstName");
@@ -75,19 +83,26 @@ public class FirstServlet extends HttpServlet{
 		String dateOfJoining = request.getParameter("dateOfJoining");
 		String salary = request.getParameter("salary");
 		Trainer trainer = (Trainer) session.getAttribute("trainer");
-
-		employeeId = employeeService.addTrainer(employeeId, firstName, lastName,
-				designation, department, Long.parseLong(phoneNumber), emailId, dateOfBirth,
-				Float.parseFloat(previousExperience), dateOfJoining, Long.parseLong(salary));
-
-		PrintWriter out = response.getWriter();
+		if (request.getParameter("action").equals("insertTrainer")) {
+			employeeId = employeeService.addTrainer(employeeId, firstName, lastName,
+					designation, department, Long.parseLong(phoneNumber), emailId, dateOfBirth,
+					Float.parseFloat(previousExperience), dateOfJoining, Long.parseLong(salary));
+		} else if (request.getParameter("action").equals("updateTrainer")) {
+			logger.info("working");
+			logger.info(trainer.getId());
+			employeeService.updateTrainerById(trainer.getId(), firstName, lastName,
+					designation, department, phoneNumber, emailId, dateOfBirth,
+					previousExperience, dateOfJoining, salary);
+		}
 		logger.info("Trainer Inserted successfully!");
-		RequestDispatcher requestDispatcher=request.getRequestDispatcher("EmployeeRegisterDetails.jsp");    
+		RequestDispatcher requestDispatcher=request.getRequestDispatcher("add?flag=viewTrainer");    
 		requestDispatcher.forward(request, response);//method may be include or forward  
 	}
 
 	public void insertTrainee(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		response.setContentType("text/html"); 
+		PrintWriter out = response.getWriter();
+		HttpSession session = request.getSession();   
 		Set<Skills> skillSet = new LinkedHashSet<Skills>();
 		Integer employeeId = 0;
 		String firstName = request.getParameter("firstName");
@@ -101,6 +116,8 @@ public class FirstServlet extends HttpServlet{
 		String dateOfJoining = request.getParameter("dateOfJoining");
 		String passedOutYear = request.getParameter("passedOutYear");
 		Skills skills = new Skills();
+		Integer skillId = Integer.parseInt(request.getParameter("skillId"));
+		skills.setSkillId(skillId);
 		String skillName = request.getParameter("skillName");
 		skills.setSkillName(skillName);
 		String skillVersion = request.getParameter("version");
@@ -110,16 +127,24 @@ public class FirstServlet extends HttpServlet{
 		String skillExperience = request.getParameter("experience");
 		skills.setSkillExperience(Float.parseFloat(skillExperience));
 		skillSet.add(skills);
+		Trainee trainee = (Trainee) session.getAttribute("trainee");
+		//Skills skill = (Skills) session.getAttribute("skill");
 
-		employeeId = employeeService.addTrainee(employeeId, firstName, lastName,
-				designation, department, Long.parseLong(phoneNumber), emailId, dateOfBirth,
-				Float.parseFloat(previousExperience), dateOfJoining, Integer.parseInt(passedOutYear),
-				skillSet);
-
-		PrintWriter out = response.getWriter();
-		logger.info("Trainer Inserted successfully!");
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("EmployeeRegisterDetails.jsp");    
-		requestDispatcher.forward(request, response);//method may be include or forward  
+		if (request.getParameter("action").equals("insertTrainee")) {
+			employeeId = employeeService.addTrainee(employeeId, firstName, lastName,
+					designation, department, Long.parseLong(phoneNumber), emailId, dateOfBirth,
+					Float.parseFloat(previousExperience), dateOfJoining, Integer.parseInt(passedOutYear),
+					skillSet);
+		} else if (request.getParameter("action").equals("updateTrainee")) {
+			logger.info("working");
+			logger.info(trainee.getId());
+			employeeService.updateTraineeById(trainee.getId(), firstName, lastName,
+					designation, department, phoneNumber, emailId, dateOfBirth,
+					previousExperience, dateOfJoining, passedOutYear, skillSet);
+		}
+		logger.info("Trainee Inserted successfully!");
+		RequestDispatcher requestDispatcher=request.getRequestDispatcher("add?flag=viewTrainee");    
+		requestDispatcher.forward(request, response);//method may be include or forward
 	}
 
 	public void viewTrainer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -136,37 +161,68 @@ public class FirstServlet extends HttpServlet{
 		requestDispatcher.forward(request, response);
 	}
 
-	public void updateTrainerById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void viewTrainerById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Integer employeeId = Integer.parseInt(request.getParameter("id"));
-		List<Trainer> trainer;
-		String firstName = request.getParameter("firstName");
-		String lastName = request.getParameter("lastName");
-		String designation = request.getParameter("designation");
-		String department = request.getParameter("department");
-		String phoneNumber = request.getParameter("phoneNumber");
-		String emailId = request.getParameter("emailId");
-		String dateOfBirth = request.getParameter("dateOfBirth");
-		String previousExperience = request.getParameter("previousExperience");
-		String dateOfJoining = request.getParameter("dateOfJoining");
-		String salary = request.getParameter("salary");
+		Trainer trainer = employeeService.getTrainerById(employeeId);
+		request.setAttribute("trainer", trainer);
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/UpdateTrainer.jsp");
+		requestDispatcher.forward(request, response);
+		response.setContentType("text/html"); 
+		PrintWriter out = response.getWriter();
+	}
 
-		trainer = employeeService.updateTrainerById(employeeId, firstName, lastName,
+	public void viewTraineeById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Integer employeeId = Integer.parseInt(request.getParameter("id"));
+		Trainee trainee = employeeService.getTraineeById(employeeId);
+		request.setAttribute("trainee", trainee);
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/UpdateTrainee.jsp");
+		requestDispatcher.forward(request, response);
+		response.setContentType("text/html"); 
+		PrintWriter out = response.getWriter();
+	}
+
+	/* public void updateTrainerById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Integer employeeId = Integer.parseInt(request.getParameter("id"));
+		//Trainer trainer = employeeService.getTrainerById(employeeId);
+		String firstName = request.getParameter("firstName"); 
+		String lastName = request.getParameter("lastName"); 
+		String designation = request.getParameter("designation"); 
+		String department = request.getParameter("department"); 
+		String phoneNumber = request.getParameter("phoneNumber"); 
+		String emailId = request.getParameter("emailId"); 
+		String dateOfBirth = request.getParameter("dateOfBirth"); 
+		String previousExperience = request.getParameter("previousExperience"); 
+		String dateOfJoining = request.getParameter("dateOfJoining"); 
+		String salary = request.getParameter("salary");
+		employeeService.updateTrainerById(employeeId, firstName, lastName,
 				designation, department, phoneNumber, emailId, dateOfBirth,
 				previousExperience, dateOfJoining, salary);
-		request.setAttribute("trainer", trainer);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("ViewTrainer.jsp");  
+
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("EmployeeRegisterDetails.jsp");
+		//request.setAttribute("trainer", trainer);
 		requestDispatcher.forward(request, response);
 		PrintWriter out = response.getWriter();
 		logger.info("Trainer Updated Successfully!");
-	}
+	} */
 
 	public void deleteTrainerById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html"); 
 		PrintWriter out = response.getWriter();
 		int id = Integer.parseInt(request.getParameter("id"));
 		employeeService.deleteTrainerById(id);
-		out.println(id + "Deleted Successfully");
-		RequestDispatcher rd=request.getRequestDispatcher("/add?action=viewTrainer");  
+		//out.println(id + "Deleted Successfully");
+		RequestDispatcher rd=request.getRequestDispatcher("add?flag=viewTrainer");  
+		rd.include(request, response);
+
+	}
+	
+	public void deleteTraineeById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html"); 
+		PrintWriter out = response.getWriter();
+		int id = Integer.parseInt(request.getParameter("id"));
+		employeeService.deleteTraineeById(id);
+		//out.println(id + "Deleted Successfully");
+		RequestDispatcher rd=request.getRequestDispatcher("add?flag=viewTrainee");  
 		rd.include(request, response);
 
 	}
